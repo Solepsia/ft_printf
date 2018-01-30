@@ -1,0 +1,54 @@
+PARTIE OBLIGATOIRE:
+
+Formats:
+s = const char * = ft_putstr | ATTENTION AUX l
+S = ls = const wchar_t *
+p = void * imprime en hexadecimal (similaire a %#x ou %#lx)
+d ou i = int converti en notation decimale = ft_putnbr
+D = ld
+o = unigned int converti en octal = ft_putbasemin(nb, 8)
+O = lo
+u = unsigned int converti en unsigned decimal = ft_putnbr(nb forcement positif)
+U = lu
+x = unsigned int converti en hexadecimal minuscule = ft_putbasemin(nb, 16)
+X = unsigned int converti en hexadecimal majuscule = ft_putbasemaj(nb, 16)
+c = int converti en unsigned char, et ecrit le char correspondant | ATTENTION AUX l
+C = lc
+% = affiche un '%'
+
+Flags:
+# = forme alternative cas particuliers selon si o, xX, aAeEfF ou gG
+0 = remplit avec des 0 a gauche | utilisable avec diouxXaAeEfFgG | ne sert a rien si le flag - est present, ni si une precision a ete donnee avec diouxX
+- = 
++ = doit afficher le signe (+ ou -) du resultat d'une conversion signee
+[space] = n'affiche pas le + en cas de resultat positif a une conversion signee
+
+Modificateurs de longueur:
+hh = transforme l'int en question en un signed char ou unsigned char pour l'utilisation dans ft_printf
+h = int -> short int ou unsigned short int
+l = int -> long int ou unsigned long int
+ll = int -> long long int ou unsigned long long int
+j = int -> intmax_t ou uintmax_t
+z = int -> size_t ou ssize_t
+
+
+BONUS:
+
+Formats:
+e ou E = ecriture scientifique (genre 1.258e12)
+f ou F = ecriture decimale
+g ou G = ecriture decimale avec chiffres significatifs
+a ou A
+n = stocke le nb de char ecrits dans un *int passe en parametre de ft_printf | ATTENTION AUX l
+
+Flags:
+*
+$
+L = long double (avec aAeEfFgG)
+' = affiche les gros nombres en mode 1 000 000 ou 1,000,000 si les informations locales indiquent un format correspondant
+
+Non-existants:
+%b = binaire
+%r = chaine avec caracteres non imprimables
+%k = date en format ISO quelconque
+Gestion des couleurs ? Des fd ? Ou autre...
